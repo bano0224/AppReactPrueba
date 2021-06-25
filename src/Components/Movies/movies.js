@@ -8,7 +8,7 @@ import getMovies from '../../Action/index'
 export function Movies({getMovies, state}) {
   return (
     <div>
-      <h2>Películas del Señor de los Anillos</h2>
+      <h2>Señor de los Anillos</h2>
         <ul>
           {state.map(el => (
         <div>
