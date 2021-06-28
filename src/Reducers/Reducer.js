@@ -1,12 +1,15 @@
-
+import {GET_MOVIES} from "../Action/index"
 
 const initialState = [];
 
-function rootReducer(state = initialState, action) {
-    if (action.type === "GET_MOVIES") {
-        return state.concat(action.payload.search)
-    }
-    return state;
+
+export function rootReducer (state = initialState, action) {
+    switch (action.type) {
+      case  GET_MOVIES:
+          return action.payload.Search
+      default:
+        return state;
   }
+}
 
 export default rootReducer;
